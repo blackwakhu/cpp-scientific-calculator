@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include "module/calc.h"
+
 int main() {
-  std::cout << "Hello World!\n";
+  std::cout << "This is a scientific calculator!\n";
 }
