@@ -18,10 +18,11 @@ int main() {
 
 void startCalc(Calculator calc){
   cout << "Welcome to the calculator"<<endl;
-  bool running = true;
-  while(running){
-    running = runCalc(calc);
-  }
+  // bool running = true;
+  // while(running){
+  //   running = runCalc(calc);
+  // }
+  runCalc(calc);
   cout<<endl<<"thanks for using the calculator"<<endl;
 }
 
@@ -33,6 +34,8 @@ bool runCalc(Calculator calc){
     return false;
   calc.setExpression(ex);
   calc.getSymbol();
-  calc.printexp();
+  cout<<"\n= "<<calc.createMath()<<endl;
   return true;
 }
+
+
